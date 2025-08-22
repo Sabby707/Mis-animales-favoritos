@@ -20,6 +20,27 @@
         border-radius: 10px;
         border: 5px #ceffb7 solid;
       }
+      /*container + texto al lado*/
+      .content-container{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: #ceffb7;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+      }
+      /*texto*/
+      .panda-info{
+        max-width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+      }
       
 </style>
 <body>
@@ -33,12 +54,16 @@
   </header>
   <main>
     <h1>Panda</h1>
-       <div>
+       <div class="content-container">
           <img
             src="https://i.pinimg.com/474x/20/02/d3/2002d3eeaaaa0f8959982a5ed847193b.jpg"
             alt="Panda"
           />
-          <p>Panda</p>
+          <div class="panda-info">
+          <p>
+  El panda gigante es un mamífero originario de China, conocido por su pelaje blanco y negro. Se alimenta principalmente de bambú y es símbolo de paz y conservación.
+</p>
+          </div>
         </div>
         </main>
 </body>
