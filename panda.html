@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<style>
-     h1 {
-        text-align: center;
-        margin-bottom: 40px;
-        background-color: #c2fad0;
-      }
-     
-      img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 5px #ceffb7 solid;
-      }
-      
-</style>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Animales</a>
-      <a href="gato.html">Gato</a>
-      <a href="perro.html">Perro</a>
-      <a href="panda.html">Panda</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Panda</h1>
-       <div>
-          <img
-            src="https://i.pinimg.com/474x/20/02/d3/2002d3eeaaaa0f8959982a5ed847193b.jpg"
-            alt="Panda"
-          />
-          <p>Panda</p>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      background-color: #c2fad0;
+    }
+
+    img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 5px #ceffb7 solid;
+    }
+    /*container + texto al lado*/
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: #ceffb7;
+      border-radius: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    /*texto*/
+    .panda-info {
+      max-width: 500px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Animales</a>
+        <a href="gato.html">Gato</a>
+        <a href="perro.html">Perro</a>
+        <a href="panda.html">Panda</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Panda</h1>
+      <div class="content-container">
+        <img
+          src="https://i.pinimg.com/474x/20/02/d3/2002d3eeaaaa0f8959982a5ed847193b.jpg"
+          alt="Panda"
+        />
+        <div class="panda-info">
+          <p>
+            El panda gigante es un mamífero originario de China, conocido por su
+            pelaje blanco y negro. 
+            Se alimenta principalmente de bambú y es
+            símbolo de paz y conservación.
+          </p>
         </div>
-        </main>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
